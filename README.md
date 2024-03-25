@@ -24,6 +24,7 @@ Developers can interact with the registry using Web3 libraries.
 Smart Contracts:
 Develop Ethereum smart contracts for package registration, version management, and querying.
 Implement PoC logic to calculate teaRank.
+
 CLI Tool:
 Create a command-line interface (CLI) tool for developers to interact with TeaBase.
 Commands: tea init, tea publish, tea install, tea graph, etc.
