@@ -19,6 +19,7 @@ High-ranking projects receive more attention and rewards.
 Smart Contract Integration:
 TeaBase integrates with Ethereum smart contracts for package management.
 Developers can interact with the registry using Web3 libraries.
+
 **Implementation Steps:**
 Smart Contracts:
 Develop Ethereum smart contracts for package registration, version management, and querying.
@@ -35,11 +36,13 @@ Hashes of IPFS content can be stored on-chain.
 Documentation and Tutorials:
 Write comprehensive documentation explaining TeaBase’s architecture, usage, and integration.
 Provide tutorials for developers to get started.
+
 **Tech Stack:**
 Solidity: For smart contract development.
 Node.js: For CLI tool and web interface.
 IPFS: For decentralized file storage.
 Web3.js: For Ethereum interaction.
+
 **Benefits:**
 Trustless: No central authority; everything is verifiable on the blockchain.
 Incentivized Maintenance: Developers earn rewards for maintaining packages.
