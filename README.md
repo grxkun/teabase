@@ -1,50 +1,51 @@
-# teabase
-**Project Idea:** “TeaBase” - A Decentralized Dependency Management System
-**Overview:**
-TeaBase aims to revolutionize how developers manage dependencies in their projects. It provides a decentralized, trustless, and efficient way to handle software dependencies, ensuring stability, security, and transparency.
 
-**Features:**
-Decentralized Registry:
-TeaBase maintains a decentralized registry of all open-source packages.
-Developers can publish, update, and query package information directly on the blockchain.
-Immutable Package Versions:
-Each package version is cryptographically signed and stored on-chain.
-Once published, a version cannot be altered, ensuring immutability.
-Dependency Graphs:
-TeaBase constructs dependency graphs for projects.
-Developers can visualize and analyze their project’s dependencies.
-Proof of Contribution (PoC):
-TeaBase calculates a project’s teaRank based on its impact within the ecosystem.
-High-ranking projects receive more attention and rewards.
-Smart Contract Integration:
-TeaBase integrates with Ethereum smart contracts for package management.
-Developers can interact with the registry using Web3 libraries.
+---
 
-**Implementation Steps:**
-Smart Contracts:
-Develop Ethereum smart contracts for package registration, version management, and querying.
-Implement PoC logic to calculate teaRank.
+# Token Aggregator
 
-CLI Tool:
-Create a command-line interface (CLI) tool for developers to interact with TeaBase.
-Commands: tea init, tea publish, tea install, tea graph, etc.
-Web Interface:
-Build a web interface for browsing and searching packages.
-Display package details, versions, and dependencies.
-IPFS Integration:
-Use IPFS (InterPlanetary File System) to store package metadata and files.
-Hashes of IPFS content can be stored on-chain.
-Documentation and Tutorials:
-Write comprehensive documentation explaining TeaBase’s architecture, usage, and integration.
-Provide tutorials for developers to get started.
+The **Token Aggregator** is a JavaScript program that allows you to retrieve the allocation of multiple smart contract holders at once on the Ethereum Virtual Machine (EVM). It aggregates balance information for RBTC (Rootstock Bitcoin) and two ERC20 tokens.
 
-**Tech Stack:**
-Solidity: For smart contract development.
-Node.js: For CLI tool and web interface.
-IPFS: For decentralized file storage.
-Web3.js: For Ethereum interaction.
+## Installation
 
-**Benefits:**
-Trustless: No central authority; everything is verifiable on the blockchain.
-Incentivized Maintenance: Developers earn rewards for maintaining packages.
-Transparent: Dependency information is public and auditable.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/grxkun/teabase.git
+   cd teabase
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configuration:**
+   - Set your Ethereum provider URL (e.g., Infura, Alchemy, or your own node) in `token-aggregator.js`.
+   - Define the addresses and ABIs of the ERC20 tokens you want to track.
+
+4. **Run the Program:**
+   ```bash
+   node token-aggregator.js
+   ```
+
+## Usage
+
+1. Replace the placeholders (`YOUR_ETHEREUM_PROVIDER_URL`, `0xToken1Address`, `0xToken2Address`, and `0xUserAddress`) with actual values relevant to your use case.
+2. Execute the program to see aggregated balances for the specified user address.
+
+## Example Output
+
+```
+RBTC balance for 0xUserAddress: 0.123 RBTC
+Token1 balance for 0xUserAddress: 456.789 Token1
+Token2 balance for 0xUserAddress: 987.654 Token2
+```
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
